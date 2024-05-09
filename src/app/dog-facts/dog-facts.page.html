@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title id="header1">Dog Facts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Dog Facts</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container"> 
+    <br>
+    <h3 id="title">Some Dog Facts!</h3>
+    <img src="https://assets.technologynetworks.com/production/dynamic/images/content/361072/dog-breed-is-not-an-accurate-way-to-predict-behavior-361072-640x360.jpg" class="imageFade1">
+    <p id="body">Below I am going to list out a few random facts about dogs!
+      <br><br></p>
+      <ol>
+        <li>A dog's nose print is like a human's fingerprint, each nose print is unique to each dog</li>
+        <br>
+        <li>There is a common misconception that dogs are colourlind, they can actually see both blue and yellow</li>
+        <br>
+        <li>Dogs have an undertsanding of time. If the owner keeps to a routine, dogs can predict when they're to be fed or do routine activities</li>
+        <br>
+        <li>Dogs can distinguish a change in blood pressure and heart rate in humans, which is why they are great service animals for people with health conditions 
+          in that field</li>
+        <br>
+        <li>There is research suggesting dogs can smell cancer in humans, with them being able to smell the fragrance given off by certain cancer cells. 
+          This is still ongoing but it may be helpful to detect cancer early in humans if used to its full capability</li>
+        <br>
+        <li>Dogs use their tongues to sweat instead of through their skin</li>
+        <br>
+        <li>For about four months after a pup is born, they are deaf</li>
+        <br>
+        <li>The oldest domesticated dog breed is Saluki, having been around for thousands of years and originating in the areas now known as Eqypt, Iran and Iraq</li>
+        <br>
+        <li>Unlike most mammels, dogs actually have three eyelids. It helps to prevent the eyes from drying out</li>
+        <br>
+        <li>Guide dogs was a concept first introduced in Germany after the Second World War, having the first ever guide dog training school</li>
+      </ol>
+
+      <!--Sources for facts: https://www.thedrakecenter.com/services/dogs/blog/23-amazing-facts-about-dogs-you-probably-didnt-know, 
+        https://www.akc.org/expert-advice/lifestyle/dog-facts/, https://www.mygavet.com/services/blog/50-dog-facts-you-probably-didnt-know-->
+
+      <br>
+      If you wish to read further about dog facts, press the button below!
+      <br>
+
+      <!--Opens a link to page about dog facts that are no included in the above text-->
+      <ion-button (click) = "openDogFacts()">More Dog Facts</ion-button>
+      <br>
+      <br>
+      <img src="https://hips.hearstapps.com/hmg-prod/images/small-dogs-6626cf74dfe17.jpg?crop=0.579xw:0.868xh;0.197xw,0.0337xh&resize=640:*" class="imageFade2"height="300" width="350">
+      <br>
+  </div>
+</ion-content>

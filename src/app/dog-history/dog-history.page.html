@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title id="header">Dog History</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Dog History</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <br>
+    <h3 id="title">Dog History</h3>
+    <h4 id="title2">Did You Know This?</h4>
+    <img src="https://i.abcnewsfe.com/a/fbf4fc33-b101-4337-bc4b-9955cccd6991/dog-rf-gty-ml-231201_1701453723681_hpMain.jpg" class="imageFade">
+
+    <p id="body">Germany is where the first known domesticated dog originated. However, it is estimated that it was over 135,000 years ago where dogs became more 
+      distinguished from the wolf counter-part. 
+      <br>
+      <br>
+      Over thousands of years, through survival of the fittest and through adapting to their surroundings , we see the vast amount of dog breeds across the world. There is thought to be between 200 and 400 different breeds. 
+      <br>
+      <br>
+      Selective breeding by humans had some dog breeds to be bred specifically for certain activies i.e. hunting, fishing, herding. This would mean that there are dogs that have
+      sharper noses than to other, smaller bodyframes or smaller body features.
+      <br>
+      <br>
+      <br>
+      If you would like to read into dog history some more, press the button below!
+      <br>
+      <br>
+
+      
+      <!--Dog History fact source: https://happydogtraining.info/general-information/the-dog-a-brief-history/-->
+      <ion-button (click) = "openDogHistory()">More Dog History</ion-button>
+      <br>
+      <br>
+    </p>
+  </div>
+</ion-content>
+
+

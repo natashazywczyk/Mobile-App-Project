@@ -1,0 +1,52 @@
+#header1
+{
+  color: #7a64c0;
+}
+
+#container
+{
+  background-color: #9884D8;
+
+  text-align: center;
+  color: #6752b4;
+  
+  font-size: 16px;
+  line-height: 22px;
+}
+
+#title
+{
+  font-weight: 600;
+  color: #54419c;
+}
+
+ion-button
+{
+  font-size: 18px;
+  line-height: 22px;
+
+  --background:#c1b2e4;
+  --color: #5d419c;
+}
+
+/*Has the image quickly fade into sight*/
+.imageFade1
+{
+  animation: fadeInAnimation 1s ease-out; 
+}
+
+.imageFade2
+{
+  animation: fadeInAnimation 10s ease-out; 
+}
+
+@keyframes fadeInAnimation {
+  from {
+    /*Starts transparent*/
+    opacity: 0;
+  }
+  to {
+    /*Ends with it being fully visable*/
+    opacity: 1;
+  }
+}

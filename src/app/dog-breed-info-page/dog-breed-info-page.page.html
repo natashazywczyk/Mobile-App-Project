@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title  id="header1">Dog Breeds</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar id ="header2">
+      <ion-title size="large">Dog Breeds</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <!--Describing below content-->
+    <h3 id="title"><br>Here is a list of the most common domesticated dog breeds!</h3>
+      <p>There are breeds listed below that you have most likely come across in your day to day.
+      <br>
+    </p>
+
+    <!--Lists out the allBreeds array to the app screen-->
+  <ul id="breedsList">
+    <p id = "list" *ngFor="let breed of allBreeds; let i = index">
+     {{breed}} 
+     <!--Prints out images from images[] after each breed-->
+     <img [src]="images[i]">
+    </p>
+
+  </ul>
+
+</div>
+</ion-content>

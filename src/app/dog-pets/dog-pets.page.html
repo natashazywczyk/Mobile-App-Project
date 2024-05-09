@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title id="header">Pet The Dog</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Pet The Dog</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <h3 id="title">Click to pet the dog!</h3>
+    <p>You can't but not, look at him!</p>
+    <ion-button (click)="countPets()">Pet</ion-button>
+
+    <img src="https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/10-intelligent-dog-breeds/golden-retriever-tongue-out.jpg">
+
+    <p>Pets: {{numberOfPets}}</p>
+
+    <p>--------------------------------------
+      <br>
+      Don't forget about this guy!</p>
+    <ion-button (click)="countPets2()">Pet</ion-button>
+    <img src="https://www.pumpkin.care/wp-content/uploads/2021/07/Irish-Setter-Hero.jpg">
+
+    <p>Pets: {{numberOfPets2}}</p>
+
+  </div>
+</ion-content>
